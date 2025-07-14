@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Portal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  </head>
+  <body>
+    <div class="full-panel">
+      <div class="container">
+        <header id="header">
+          <h1>News Portal</h1>
+          <nav class="nav-bar">
+            <button class="nav-button active" data-category="general">
+              General
+            </button>
+            <button class="nav-button" data-category="sports">Sports</button>
+            <button class="nav-button" data-category="education">
+              Education
+            </button>
+            <button class="nav-button" data-category="politics">
+              Politics
+            </button>
+            <button class="nav-button" data-category="business">
+              Business
+            </button>
+            <button class="nav-button" data-category="technology">
+              Technology
+            </button>
+          </nav>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search news..." />
+            <button id="searchButton">Search</button>
+          </div>
+        </header>
+        <main id="newsContainer"></main>
+        <div id="pagination" class="pagination">
+          <button id="prevButton" class="pagination-button">Previous</button>
+          <span id="pageInfo"></span>
+          <button id="nextButton" class="pagination-button">Next</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <p>© 2025 News Portal. All rights reserved.</p>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+          <ul class="footer-social">
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
