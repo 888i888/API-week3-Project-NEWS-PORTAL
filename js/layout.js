@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function createLayout() {
   const createEl = (tag, className, textContent) => {
     const el = document.createElement(tag);
     if (className) el.className = className;
@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const fullPanel = createEl("div", "full-panel");
   const container = createEl("div", "container");
 
-  // Header
   const header = createEl("header");
   header.id = "header";
 
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   header.appendChild(nav);
 
-  // Search
   const searchContainer = createEl("div", "search-container");
   const searchInput = createEl("input");
   searchInput.type = "text";
@@ -39,11 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
   searchContainer.appendChild(searchButton);
   header.appendChild(searchContainer);
 
-  // Main
   const main = createEl("main");
   main.id = "newsContainer";
 
-  // Pagination
   const pagination = createEl("div", "pagination");
   pagination.id = "pagination";
 
@@ -62,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   container.appendChild(main);
   container.appendChild(pagination);
 
-  // Footer
   const footer = createEl("footer");
   const footerContent = createEl("div", "footer-content");
   const copyright = createEl("p", null, "© 2025 News Portal. All rights reserved.");
@@ -93,4 +88,4 @@ document.addEventListener("DOMContentLoaded", () => {
   fullPanel.appendChild(container);
   fullPanel.appendChild(footer);
   document.body.appendChild(fullPanel);
-});
+}

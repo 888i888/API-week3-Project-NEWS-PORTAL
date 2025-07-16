@@ -22,7 +22,7 @@ body {
     animation: holoTilt 1.5s ease-out;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); //  
     -webkit-backdrop-filter: blur(10px);
 }
 

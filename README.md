@@ -1,5 +1,13 @@
-# News Portal
+# <p align=center>News Portal </p>
+
+![alt text](assets/image.png)
+***
+
 A responsive single-page web application that allows users to browse and search for news articles using the [News API](https://newsapi.org/). Users can select popular news categories or enter custom search queries, and navigate through pages of results with pagination support.
+
+***
+
+![alt text](assets/image-1.png)
 
 ***
 
@@ -39,19 +47,32 @@ const API_KEY = 'YOUR_API_KEY_HERE';
 ## Project Structure
 
 ```
-/news-portal
+News Portal
 │
-├── index.html
+├── index.html                      # Main HTML entry point
+│
 ├── css/
-│   └── styles.css
+│   └── styles.css                  # Styles for layout, news cards, and UI components
+│
 ├── js/
-│   ├── api.js        # Handles API requests and data fetching
-│   ├── ui.js         # Manages UI rendering of articles and pagination
-│   └── main.js       # Initializes the app and, handle user interaction
-|   |__ layout.js     # Dynamically creates and injects HTML structure
+│   ├── api.js                      # Handles API requests and news data fetching
+│   ├── config.js                   # Stores constants like API key and base URL
+│   ├── events.js                   # Attaches UI event listeners (search, nav, input)
+│   ├── layout.js                   # Dynamically creates and appends HTML layout
+│   ├── main.js                     # Application entry point; wires everything together
+│   ├── pagination.js               # Controls pagination UI and page changes
+│   ├── scrollHandler.js            # Manages header visibility on scroll
+│   ├── state.js                    # Maintains global state (current page, query, etc.)
+│   ├── newsRenderer.js             # Renders fetched news articles into the DOM
+│   ├── pagination.js               # Controls pagination UI and page changes
+│   ├── scrollHandler.js            # Manages header visibility on scroll
+│   ├── state.js                    # Maintains global state (current page, query, etc.)
+│
 ├── assets/
-│   └── favicon.ico
-└── README.md
+│   └── favicon.ico                 # Site favicon
+│
+└── README.md                       # Project description and setup instructions
+
 
 ```
 ***
@@ -62,3 +83,5 @@ const API_KEY = 'YOUR_API_KEY_HERE';
 - CSS
 - JavaScript
 - News API 
+
+***
