@@ -7,10 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const fullPanel = createEl("div", "full-panel");
-
   const container = createEl("div", "container");
 
-  //header
+  // Header
   const header = createEl("header");
   header.id = "header";
 
@@ -25,15 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index === 0) btn.classList.add("active");
     nav.appendChild(btn);
   });
-
   header.appendChild(nav);
 
+  // Search
   const searchContainer = createEl("div", "search-container");
   const searchInput = createEl("input");
   searchInput.type = "text";
   searchInput.id = "searchInput";
   searchInput.placeholder = "Search news...";
-
   const searchButton = createEl("button", null, "Search");
   searchButton.id = "searchButton";
 
@@ -41,19 +39,18 @@ document.addEventListener("DOMContentLoaded", () => {
   searchContainer.appendChild(searchButton);
   header.appendChild(searchContainer);
 
-  //main content
+  // Main
   const main = createEl("main");
   main.id = "newsContainer";
 
+  // Pagination
   const pagination = createEl("div", "pagination");
   pagination.id = "pagination";
 
   const prevBtn = createEl("button", "pagination-button", "Previous");
   prevBtn.id = "prevButton";
-
   const pageInfo = createEl("span");
   pageInfo.id = "pageInfo";
-
   const nextBtn = createEl("button", "pagination-button", "Next");
   nextBtn.id = "nextButton";
 
@@ -61,15 +58,13 @@ document.addEventListener("DOMContentLoaded", () => {
   pagination.appendChild(pageInfo);
   pagination.appendChild(nextBtn);
 
-  // Append to container
   container.appendChild(header);
   container.appendChild(main);
   container.appendChild(pagination);
 
-  //footer
+  // Footer
   const footer = createEl("footer");
   const footerContent = createEl("div", "footer-content");
-
   const copyright = createEl("p", null, "© 2025 News Portal. All rights reserved.");
 
   const footerLinks = createEl("ul", "footer-links");
@@ -95,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
   footerContent.appendChild(footerSocial);
   footer.appendChild(footerContent);
 
-  // Append everything to body
   fullPanel.appendChild(container);
   fullPanel.appendChild(footer);
   document.body.appendChild(fullPanel);

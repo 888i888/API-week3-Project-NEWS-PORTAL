@@ -7,7 +7,7 @@ A responsive single-page web application that allows users to browse and search 
 
 - Browse news by categories: General, Sports, Education, Politics, Business, Technology.
 - Search news articles by keywords.
-- View article title, description, source, publication date, and thumbnail image.
+- View article title, description, source and thumbnail image.
 - Pagination to navigate through multiple pages of news results.
 - Responsive and user-friendly interface.
 - Footer with links and social media placeholders.
@@ -47,8 +47,8 @@ const API_KEY = 'YOUR_API_KEY_HERE';
 ├── js/
 │   ├── api.js        # Handles API requests and data fetching
 │   ├── ui.js         # Manages UI rendering of articles and pagination
-│   └── main.js       # Contains event listeners and app logic
-|   |__ layout.js     # Structure page
+│   └── main.js       # Initializes the app and, handle user interaction
+|   |__ layout.js     # Dynamically creates and injects HTML structure
 ├── assets/
 │   └── favicon.ico
 └── README.md
