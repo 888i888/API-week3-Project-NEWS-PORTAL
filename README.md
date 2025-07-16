@@ -48,6 +48,7 @@ const API_KEY = 'YOUR_API_KEY_HERE';
 │   ├── api.js        # Handles API requests and data fetching
 │   ├── ui.js         # Manages UI rendering of articles and pagination
 │   └── main.js       # Contains event listeners and app logic
+|   |__ layout.js     # Structure page
 ├── assets/
 │   └── favicon.ico
 └── README.md
