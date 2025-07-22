@@ -1,4 +1,3 @@
-// newsRenderer.js
 export function displayNews(articles) {
   const newsContainer = document.getElementById('newsContainer');
   newsContainer.innerHTML = '';

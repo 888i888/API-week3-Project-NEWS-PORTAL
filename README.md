@@ -62,7 +62,6 @@ News Portal
 │   ├── main.js                     # Application entry point; wires everything together
 │   ├── pagination.js               # Controls pagination UI and page changes
 │   ├── scrollHandler.js            # Manages header visibility on scroll
-│   ├── state.js                    # Maintains global state (current page, query, etc.)
 │   ├── newsRenderer.js             # Renders fetched news articles into the DOM
 │   ├── pagination.js               # Controls pagination UI and page changes
 │   ├── scrollHandler.js            # Manages header visibility on scroll
